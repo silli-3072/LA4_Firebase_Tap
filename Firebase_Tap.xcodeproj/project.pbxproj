@@ -13,6 +13,8 @@
 		82394BDB28B4D6D2005957FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82394BD928B4D6D2005957FD /* Main.storyboard */; };
 		82394BDD28B4D6D4005957FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82394BDC28B4D6D4005957FD /* Assets.xcassets */; };
 		82394BE028B4D6D4005957FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82394BDE28B4D6D4005957FD /* LaunchScreen.storyboard */; };
+		82394BE928B4ED15005957FD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 82394BE828B4ED15005957FD /* FirebaseFirestore */; };
+		82394BEB28B4EE8F005957FD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82394BEA28B4EE8F005957FD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		82394BDC28B4D6D4005957FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82394BDF28B4D6D4005957FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		82394BE128B4D6D4005957FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82394BEA28B4EE8F005957FD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82394BE928B4ED15005957FD /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +60,7 @@
 		82394BD228B4D6D2005957FD /* Firebase_Tap */ = {
 			isa = PBXGroup;
 			children = (
+				82394BEA28B4EE8F005957FD /* GoogleService-Info.plist */,
 				82394BD328B4D6D2005957FD /* AppDelegate.swift */,
 				82394BD528B4D6D2005957FD /* SceneDelegate.swift */,
 				82394BD728B4D6D2005957FD /* ViewController.swift */,
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = Firebase_Tap;
+			packageProductDependencies = (
+				82394BE828B4ED15005957FD /* FirebaseFirestore */,
+			);
 			productName = Firebase_Tap;
 			productReference = 82394BD028B4D6D2005957FD /* Firebase_Tap.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 82394BC728B4D6D2005957FD;
+			packageReferences = (
+				82394BE728B4ED15005957FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 82394BD128B4D6D2005957FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82394BE028B4D6D4005957FD /* LaunchScreen.storyboard in Resources */,
+				82394BEB28B4EE8F005957FD /* GoogleService-Info.plist in Resources */,
 				82394BDD28B4D6D4005957FD /* Assets.xcassets in Resources */,
 				82394BDB28B4D6D2005957FD /* Main.storyboard in Resources */,
 			);
@@ -358,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82394BE728B4ED15005957FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82394BE828B4ED15005957FD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82394BE728B4ED15005957FD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82394BC828B4D6D2005957FD /* Project object */;
 }

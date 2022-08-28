@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>893169286425-714oihmq3t7g75dlivh2cdanf6qh0c77.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.893169286425-714oihmq3t7g75dlivh2cdanf6qh0c77</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB-TlQHUeh_0VD1c3aEAHQKWl1nOVq7EPk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>893169286425</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.haruta.harutyann.Firebase-Tap</string>
+	<key>PROJECT_ID</key>
+	<string>fir-tap</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fir-tap.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:893169286425:ios:e43e112ec96bac0f019988</string>
+</dict>
+</plist>
